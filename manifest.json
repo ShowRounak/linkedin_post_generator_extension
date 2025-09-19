@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube to Linkedin Post Generator",
+  "version": "1.0",
+  "description": "Convert YouTube video transcripts into engaging LinkedIn posts using AI.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon48.png"
+  }
+}

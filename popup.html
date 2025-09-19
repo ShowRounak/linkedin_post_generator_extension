@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Transcript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="icons/icon48.png" alt="Logo" class="logo" />
+        <span class="title">YouTube --> LinkedIn Post</span>
+      </div>
+      <button id="fetchBtn" class="primary-btn">Fetch Transcript</button>
+      <button id="copyBtn" class="secondary-btn">Copy</button>
+      <div id="loadingSpinner" class="spinner" style="display:none;">
+        <svg width="28" height="28" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#4F46E5">
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(1 1)" stroke-width="3">
+              <circle stroke-opacity=".3" cx="18" cy="18" r="18"/>
+              <path d="M36 18c0-9.94-8.06-18-18-18">
+                <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite"/>
+              </path>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <textarea id="output" readonly placeholder="Your LinkedIn post will appear here..."></textarea>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
